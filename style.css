@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(222, 26%, 31%);
+    font-family: 'League Spartan', sans-serif;
+}
+body.mid{
+    background-color:  hsl(0, 0%, 90%);
+}
+body.last{
+    background-color: hsl(268, 75%, 9%);
+}
+header{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto 0;
+    font-size: 18px;
+    color: white;
+    font-size: 20px;
+}
+header.mid{
+    color: black;
+}
+header.last{
+    color: hsl(52, 100%, 62%);
+}
+header .title{
+font-weight: bold;
+font-size: 25px;
+}
+header .theme{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header .theme span{
+text-transform: uppercase;
+font-size: 13px;
+font-weight: bold;
+}
+header .theme .toggle-theme{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+header .theme .toggle-theme .numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    width: 60px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+header .theme .toggle-theme .button{
+    width: 60px;
+    height: 22px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+}
+header .theme .toggle-theme .button.mid{
+    background-color:  hsl(0, 5%, 81%);
+}
+header .theme .toggle-theme .button.last{
+    background-color:  hsl(224, 36%, 15%);
+}
+header .theme .toggle-theme .button > div{
+    background-color: hsl(6, 63%, 50%);
+    margin: 0 auto;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+header .theme .toggle-theme .button > div.mid{
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+header .theme .toggle-theme .button > div.last{
+    background-color: hsl(176, 100%, 44%);
+    left: calc(100% - 18px);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.screen{
+    max-width: 400px;
+    background-color: hsl(224, 36%, 15%);
+    height: 100px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    padding: 0 25px;
+}
+.screen.mid{
+    background-color: hsl(0, 0%, 93%);
+    color: #333;
+}
+.screen.last{
+    background-color: hsl(268, 71%, 12%) ;
+    color: hsl(52, 100%, 62%);
+}
+.keyboard{
+    max-width: 400px;
+    background-color: hsl(223, 31%, 20%);
+    margin: 20px auto 0;
+    padding: 25px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.keyboard.mid{
+    background-color:  hsl(0, 5%, 81%);
+}
+.keyboard.last{
+    background-color:  hsl(268, 71%, 12%)
+    ;
+}
+.keyboard .row{
+    display: flex;
+justify-content: center;
+    gap: 10px;
+    color: hsl(222, 26%, 31%);
+}
+.keyboard .row.mid{
+    color: #333;
+}
+.keyboard .row.last .small-btn{
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    border-color: hsl(290, 70%, 36%);
+}
+.keyboard .row .small-btn{
+    width: calc(100% / 4 - 10px);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 2.2;
+    background-color: white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    
+    border-bottom: 4px solid rgb(190, 189, 188);
+}
+.keyboard .row .small-btn.bluee{
+ background-color: hsl(225, 21%, 49%);   
+ border-color: hsl(225, 31%, 38%);
+ color: white;
+ text-transform: uppercase;
+}
+.keyboard .row .small-btn.bluee.mid{
+    background-color: hsl(185, 42%, 37%);
+}
+.keyboard .row .small-btn.bluee.last{
+    background-color: hsl(281, 89%, 26%);   
+    border-color: hsl(290, 70%, 36%);
+}
+.keyboard .row.large{
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.keyboard .row .large-btn{
+    width: calc(100% / 1.9 - 20px);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 2.2;
+    background-color: white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border-bottom: 4px solid rgb(190, 189, 188);
+}
+.keyboard .row .large-btn:nth-child(1){
+background-color: hsl(225, 21%, 49%);   
+border-color: hsl(225, 31%, 38%);
+text-transform: uppercase;
+}
+.keyboard .row .large-btn:nth-child(1).mid{
+background-color: hsl(185, 42%, 37%);   
+border-color: hsl(185, 58%, 25%);
+}
+.keyboard .row .large-btn:nth-child(1).last{
+    background-color: hsl(281, 89%, 26%);   
+    border-color: hsl(290, 70%, 36%);
+    }
+.keyboard .row .large-btn:nth-child(2){
+background-color:  hsl(6, 63%, 50%);   
+border-color:  hsl(6, 70%, 34%);
+}
+.keyboard .row .large-btn:nth-child(2).mid{
+background-color:  hsl(25, 98%, 40%);   
+border-color:  hsl(25, 99%, 27%);
+}
+.keyboard .row .large-btn:nth-child(2).last{
+background-color:  hsl(176, 100%, 44%);   
+border-color:  hsl(177, 92%, 70%);
+color: #333;
+
+}
